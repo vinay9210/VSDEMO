@@ -1,27 +1,30 @@
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1 style={{colour:"yellow"}}>s.vinay</h1>
-//     </div>
-//   );
+// import React, { Component } from 'react';
+// import CBCPropEx from './CBCPropEx';
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <CBCPropEx
+//           username="s.vinay"
+//           age={20}
+//           hobbies={["Cooking", "Playing"]}
+//           address={{ city: "HYD", area: "manikonda" }}
+//           sendfun={function() { alert("hi"); }}
+//         />
+//       </div>
+//     );
+//   }
 // }
+import React from "react";
+// import CBCStateEx from "./stateexamples/CBCStateEx";
+import FBCStateEx from "./stateexamples/FBCStateEx";
+const App = () => {
+  return (
+    <div>
+      <FBCStateEx />
+    </div>
+  );
+};
 
-// export default App;
-import React, { Component } from 'react'
-import CBCPropEx from './propsex/CBCPropEx'
-
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <CBCPropEx
-        username="Varshini"
-        age={20}
-        hobbies={["Cooking", "Playing"]}
-        address={{city:"HYD", area:"manikonda"}}
-        sendFun={function(){alert("hi")}}
-        />
-      </div>
-    )
-  }
-}
+export default App;

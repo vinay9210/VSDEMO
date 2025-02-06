@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class CBCPropEx extends Component {
   render() {
     console.log(this);
     return (
-      <div>CBCPropEx
-
-        <h1>{this.Props.username}</h1>
-        <h2>{this.Props.age}</h2>
+      <div>
+        CBCPropEx
+        <h1>{this.props.username}</h1>
+        <h2>{this.props.age}</h2>
         {
-            this.Props.hobbies.map(hobby=>{
-                return <li>{hobby}</li>
-            })
+          this.props.hobbies.map((hobby, index) => {
+            return <li key={index}>{hobby}</li>;
+          })
         }
-        <h1>{this.Props.address.city}</h1>
-        <button onClick={this.Props.sendfun}>Click</button>
+        <h1>{this.props.address.city}</h1>
+        <button onClick={this.props.sendfun}>Click</button>
       </div>
-    )
-  }
+    );
+  }
 }
