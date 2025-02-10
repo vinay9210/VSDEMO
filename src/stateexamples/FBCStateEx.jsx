@@ -10,7 +10,7 @@ const FBCStateEx = () => {
     return (
         <div>
             <h1>{value}</h1>
-            <button onClick={changevalue}>Change Value</button>
+            <button onClick={changevalue}>ChangeValue</button>
         </div>
     )
 }

@@ -18,11 +18,12 @@
 // }
 import React from "react";
 // import CBCStateEx from "./stateexamples/CBCStateEx";
-import FBCStateEx from "./stateexamples/FBCStateEx";
+import UseEffectEx from "./hookexamples/UseEffectEx";
+
 const App = () => {
   return (
     <div>
-      <FBCStateEx />
+      <UseEffectEx />
     </div>
   );
 };
