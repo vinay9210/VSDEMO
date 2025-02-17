@@ -1,31 +1,13 @@
-// import React, { Component } from 'react';
-// import CBCPropEx from './CBCPropEx';
+import React from 'react';
+import RefExamples from './hookexamples/RefExamples';
+import RefExamples from './hookexamples/RefExamples';
 
-// export default class App extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <CBCPropEx
-//           username="s.vinay"
-//           age={20}
-//           hobbies={["Cooking", "Playing"]}
-//           address={{ city: "HYD", area: "manikonda" }}
-//           sendfun={function() { alert("hi"); }}
-//         />
-//       </div>
-//     );
-//   }
-// }
-import React from "react";
-// import CBCStateEx from "./stateexamples/CBCStateEx";
-import UseEffectEx from "./hookexamples/UseEffectEx";
-
-const App = () => {
+function App() {
   return (
-    <div>
-      <UseEffectEx />
+    <div className="App">
+      <RefExamples />
     </div>
   );
-};
+}
 
-export default App;
+export default App;
